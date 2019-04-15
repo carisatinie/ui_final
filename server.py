@@ -10,8 +10,8 @@ itinerary = []
 def map():
 	return render_template('map.html')
 
-@app.route('/itinerary', methods=['GET', 'POST'])
-def add_to_itinerary():
+# @app.route('/itinerary', methods=['GET', 'POST'])
+# def add_to_itinerary():
 	
 
 

@@ -69,8 +69,6 @@ function onEachFeature(feature, layer) {
 }
 
 $( document ).ready(function() {
-	// markers = [[37.7694, -122.4862], [37.8080, -122.4177], [37.8085, -122.4149], [37.7989, -122.4662], [37.7936, -122.4836]]
- //    names = ["Golden Gate Park", "Fisherman's Wharf", "Boudin Baker Cafe", "Presdio", "Baker Beach"]
     var map = L.map('mapid', {
 	    center: [37.7649, -122.431297],
 	    zoom: 13
