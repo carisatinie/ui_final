@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="{{ url_for('static', filename='viewplace.css') }}">
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+	   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+	   crossorigin=""/>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+		<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+	   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+	   crossorigin=""></script>
+		<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='viewplace.js') }}"></script>
+
+		<script>
+			var item_id = {{item_id|tojson}}
+		</script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2" id="main-img-div">
+					<!-- Main image -->
+				</div>
+
+				<div class="col-md-10">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6" id="rating-div">
+								<!-- Rating -->
+							</div>
+							<div class="col-md-6" id="num-rating-div">
+								<!-- Number of Ratings -->
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12" id="name-div">
+								<!-- Name of place -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
