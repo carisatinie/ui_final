@@ -26,7 +26,7 @@ var geojsonFeature = {
     {
       "type": "Feature",
       "properties": {
-        "location_name": "Boudin Baker Cafe",
+        "location_name": "Boudin Sourdough Bakery & Cafe",
         "id": 3
       },
       "geometry": {

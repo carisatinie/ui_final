@@ -60,6 +60,113 @@ var places = [
         "Review": "This is a happening area; it is littered with tourists, street performers, and actual litter. It is a fairly eclectic area and offers something for everyone. There's shopping, entertainment, restaurants, street vendors, art galleries, coffee shops, etc. It is a good way to spend a few hours if you don't have anything specific on your agenda. It also has other neighboring attractions that are easily accessible from this area."
       }
     ]
+  },
+  {
+    "Id": 3,
+    "Name": "Boudin Sourdough Bakery & Cafe",
+    "Main Image": "https://media-cdn.tripadvisor.com/media/photo-s/05/19/77/b7/boudin-sourdough-bakery.jpg",
+    "Rating": 4.5,
+    "Number Ratings": "8 ratings",
+    "Reviews": [
+      {
+        "Rating": 5,
+        "Review": "Spent a lot of time wandering around this huge bakery. Lots of things to buy as well as souvenirs. Loved seeing the bread in the shape of the animals like turtles, teddy bears, aligators etc"
+      },
+      {
+        "Rating": 3,
+        "Review": "Having arrived in SF from the airport, we stopped in here earlier as it was a little too early to check into our hotel. The service was very slow; they served someone behind us first (the other customer didn’t push in). The coffee was OK, the pastry OK but nothing to write home about. And - worst of all - no restrooms. We won’t be dropping in here again."
+      },
+      {
+        "Rating": 5,
+        "Review": "Always stop in here for breakfast when I visit San Francisco, the food is great, the atmosphere great, and the hot chocolates are amazing... but it is all about the bread and you can’t beat the breakfast of scrambled eggs and bacon served in a sour dough roll! Super tasty and fun! The staff are friendly, there is plenty to see in the shop, and the bread is worth it!"
+      },
+      {
+        "Rating": 5,
+        "Review": "We came twice to do the self guided bread factory tour. You pass through a small \"museum\" and then on to the balcony where you can overlook the workers making bread and read placards to educate yourself on the process. We saw the mixing, the dumping of the dough, the cutting and shaping and handling of the dough, and then it was brought to the bread rising area before baking. Fascinating to watch!"
+      },
+      {
+        "Rating": 5,
+        "Review": "The upstairs restaurant is more fancy than below and I think that some do not realize it's up there! It is DELICIOUS. My daughter had the obligatory chowder bread bowl. She LOVED it and she doesn't like soup!!! I had the Crab Louis Salad and it was ABSOLUTELY DELICIOUS. Fresh and so yum. The view of Fishermans wharf & the harbor area is just stunning. SO fun and well worth the extra money."
+      },
+      {
+        "Rating": 4,
+        "Review": "Everytime we come to SF we have to stop at the Wharf and get a bread bowl with clam chowder. My daughter demands it and I don't mind meeting that demand since it is very good. You can get more of the bread and just eat that. The only thing I wish was that I could pack up the smell of the baking bread to take home (fewer carbs ;-) )"
+      },
+      {
+        "Rating": 4,
+        "Review": "As with the name, it is obvious that this place sells sourdough, but it is THE place to get sourdough in SF. Before going on a bay cruise, I had some time to walk down to Boudin’s to get fresh sourdough to take home. They have workers in the front window making the bread and you can watch them knead and shape the dough. Inside the cafe, the nice gentleman at the bread counter helped me pick out the best loaves for taking home with me. I got a 1/2 pound loaf, an Asiago loaf and a small turtle. The Asiago loaf is actually individual rolls all together so it made for easy eating and the small loaf was easy to cut and tasted great. Good choice."
+      },
+      {
+        "Rating": 5,
+        "Review": "Wonderful sourdough that fresh from the oven clamchowder and fresh seafood. “We love it” recommend clam-chowder, Bake Spinach, fried calamari and french onion soup."
+      }
+    ]
+  },
+  {
+    "Id": 4,
+    "Name": "Presidio",
+    "Main Image": "https://img1.10bestmedia.com/Images/Photos/190887/p-presidio_54_990x660_201404231528.jpg",
+    "Rating": 4.6,
+    "Number Ratings": "5 ratings",
+    "Reviews": [
+      {
+        "Rating": 5,
+        "Review": "Beautiful trails and abundant natural habitat make this an ideal antidote for any urban overload. Possible wild parrot sighting and astonishing views of the SF Bay and wild Pacific Ocean."
+      },
+      {
+        "Rating": 5,
+        "Review": "Very beautiful! We got here early and there was plenty of parking. We enjoyed the Disney Family Museum and walking around taking in the beautiful historic buildings."
+      },
+      {
+        "Rating": 4,
+        "Review": "The Presidio in San Francisco was a previous Army post that closed in 1994 and was transferred over to the National Park Service. Since then it’s been converted into a massive living and recreational area. It’s essentially a very large park now with hiking trials, rental housing, museums, a fitness center, a camp ground, beaches, a golf course, a cemetery and so much more. The coastal hiking trails above Baker beach heading towards the Golden Gate Bridge and down in Crissy Field offer some of the best views in the entire bay area. The Presidio is a great place to bike as well and will need to go through it to be able to bike across the Golden Gate Bridge. Things get quite busy on the weekends or events such as Fleet Week and the Blue Angels events in October. The Presidio is definitely worth a visit when in San Francisco."
+      },
+      {
+        "Rating": 4,
+        "Review": "Beautiful part of the city. Originally sand dunes, it is incredibly beautiful now. Views of the Golden Gate bridge, Alcatraz and the bay are fantastic. However, dress up well as there is a cold wind normally in this area."
+      },
+      {
+        "Rating": 5,
+        "Review": "Lovely place to go for a leisurely hike with family, friends, dogs or on your own. Sun filters through trees and dogs love the freedom. Never very crowded. Children’s park. There are restaurants down below at bottom of park in old Army buildings."
+      }
+    ]
+  },
+  {
+    "Id": 5,
+    "Name": "Baker Beach",
+    "Main Image": "https://www.californiabeaches.com/wp-content/uploads/2014/09/bigstock-Baker-Beach-San-Francisco-Large-1000x644.jpg",
+    "Rating": 4.43,
+    "Number Ratings": "7 ratings",
+    "Reviews": [
+      {
+        "Rating": 4,
+        "Review": "Parking was scarce. The beach was not overly crowded, but the parking was a little scarce. Looks like a local favorite. Great place for some photos and to put your toes in the sand or ocean."
+      },
+      {
+        "Rating": 4,
+        "Review": "I don’t know that it’s likely you’ll spend too much time here, but a leg stretch while you head down to the water, feel the sand between your toes and get that great photo of the Golden Gate Bridge makes this a nice stop if you are in the area."
+      },
+      {
+        "Rating": 5,
+        "Review": "This was a fantastic place for viewing the Golden Gate Bridge. There is a nice parking lot and boardwalk down to the beach. This spot, in my opnion offers one of the best picture spots in the city."
+      },
+      {
+        "Rating": 4,
+        "Review": "We were walking through the Presidio and stopped at Baker Beach to get a view of The Golden Gate Bridge. Beautiful big beach with plenty of space for spending the day and enjoying the landscape."
+      },
+      {
+        "Rating": 5,
+        "Review": "We come here often to walk our dog. Each time is different. The last time we went, there was a couple wearing their having a photo shoot for their wedding. There were all sorts of folks enjoying the area, some of which even went into the water. The most surprising was the sighting of approximately 5 dolphins... It was just beautiful. And of course, the view of the Golden Gate Bridge. Just a bit of caution to some as there can be some nudist folks towards the farther end of the beach."
+      },
+      {
+        "Rating": 5,
+        "Review": "Not a photo, but a postcard. Ideal place to get pictures of The Golden Gate bridge from every angle you may wish. If you have time, and of course the day is clear, wait for the sunset. The view of the bridge is impressive with the falling of the sun. You can go by bus which stops just in front of the bridge."
+      },
+      {
+        "Rating": 4,
+        "Review": "This big beach is outside the Bay and therefore exposed to lots of fog and ocean-caused weather. Still it's a huge beautiful beach, great for a long walk, but bundle up for cold weather!"
+      }
+    ]
   }
 ]
 
@@ -96,8 +203,6 @@ var save_item = function(location){
         data : JSON.stringify(data_to_save),
         success: function(result){
             add_item_status(1)
-            // var db = result["itin_list"]
-            // id =  db[db.length - 1]["Id"]
         },
         error: function(request, status, error){
             add_item_status(0)
