@@ -6,3 +6,5 @@ TODO:
 * More images for each place
 * Shuffle order of places in itinerary  
 https://jqueryui.com/sortable/
+* categorized markers
+* stars for ratings
