@@ -85,6 +85,40 @@ function display_place(db_obj) {
   }
 }
 
+var save_item = function(location){
+	var data_to_save = location
+
+	$.ajax({
+        type: "POST",
+        url: "item",
+        dataType : "json",
+        contentType: "application/json; charset=utf-8",
+        data : JSON.stringify(data_to_save),
+        success: function(result){
+            add_item_status(1)
+            // var db = result["itin_list"]
+            // id =  db[db.length - 1]["Id"]
+        },
+        error: function(request, status, error){
+            add_item_status(0)
+            console.log("Error");
+            console.log(request)
+            console.log(status)
+            console.log(error)
+        }
+    });
+}
+
+var add_item_status = function(status_bool){
+	if (!status_bool) {
+		$("#status").text("Unsuccessful – please check again!")
+	}
+	else {
+		$("#status").text("Success! View your itinerary: ")
+    $("#status").append('<a href="http://127.0.0.1:5000/itinerary">Itinerary Link</a>')
+	}
+}
+
 $(document).ready(function () {
   int_id = parseInt(item_id)
   console.log("int id: ", int_id)
@@ -92,4 +126,9 @@ $(document).ready(function () {
   console.log("db obj: ", db_obj)
 
   display_place(db_obj)
+
+  $("#add_btn").on("click", function() {
+    var add_obj = places[int_id - 1]
+    save_item(add_obj)
+  })
 })
