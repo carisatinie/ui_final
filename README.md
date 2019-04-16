@@ -1,6 +1,6 @@
-#Final project for Chilton's COMS4170 UI Design class!
+Final project for Chilton's COMS4170 UI Design class!
 
-##TODO:
+TODO:
 * Link to map on viewitem page
 * Delete items from itinerary
 * More images for each place
