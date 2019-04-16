@@ -4,7 +4,8 @@ var geojsonFeature = {
     {
       "type": "Feature",
       "properties": {
-        "location_name": "Golden Gate Park"
+        "location_name": "Golden Gate Park",
+        "id": 1
       },
       "geometry": {
         "type": "Point",
@@ -14,7 +15,8 @@ var geojsonFeature = {
     {
       "type": "Feature",
       "properties": {
-        "location_name": "Fisherman's Wharf"
+        "location_name": "Fisherman's Wharf",
+        "id": 2
       },
       "geometry": {
         "type": "Point",
@@ -24,7 +26,8 @@ var geojsonFeature = {
     {
       "type": "Feature",
       "properties": {
-        "location_name": "Boudin Baker Cafe"
+        "location_name": "Boudin Baker Cafe",
+        "id": 3
       },
       "geometry": {
         "type": "Point",
@@ -34,7 +37,8 @@ var geojsonFeature = {
     {
       "type": "Feature",
       "properties": {
-        "location_name": "Presidio"
+        "location_name": "Presidio",
+        "id": 4
       },
       "geometry": {
         "type": "Point",
@@ -44,7 +48,8 @@ var geojsonFeature = {
     {
       "type": "Feature",
       "properties": {
-        "location_name": "Baker Beach"
+        "location_name": "Baker Beach",
+        "id": 5
       },
       "geometry": {
         "type": "Point",
@@ -54,18 +59,12 @@ var geojsonFeature = {
   ]
 }
 
-function onMapClick(latlng, map, name) {
-	console.log("latlng: ", latlng)
-	console.log("location_name: ", name)
-	var popup = L.popup()
-    .setLatLng(latlng)
-    .setContent('<p>Golden Gate Park</p><p>See more </p>')
-    .openOn(map);
-}
-
 function onEachFeature(feature, layer) {
     console.log("feature: ", feature);
-    layer.bindPopup(feature.properties.location_name);
+    var id = parseInt(feature.properties.id)
+    var place_link = "http://127.0.0.1:5000/item/" + id
+    var popup_content = feature.properties.location_name + '<br> <a href="' + place_link + '">' + "See More" + '</a>'
+    layer.bindPopup(popup_content);
 }
 
 $( document ).ready(function() {

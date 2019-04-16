@@ -4,14 +4,7 @@ from flask import Response, request, jsonify
 import json
 app = Flask(__name__)
 
-places = [
-	{
-		"Id": 1,
-
-	}
-]
-
-itinerary = []
+itin_list = []
 
 @app.route('/')
 def map():
@@ -20,8 +13,11 @@ def map():
 @app.route('/item/<item_id>')
 def item(item_id=None):
 	return render_template('viewplace.html', item_id=item_id)
-	
 
+@app.route('/itinerary', methods=['GET', 'POST'])
+def itinerary():
+	global itin_list
+	return render_template('viewplace.html', itinerary=itin_list)
 
 if __name__ == '__main__':
 	app.run(debug = True)

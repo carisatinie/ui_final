@@ -4,7 +4,7 @@ var places = [
     "Name": "Golden Gate Park",
     "Main Image": "https://media.cntraveler.com/photos/543d39fd00ac583c0af232fb/4:5/w_767,c_limit/golden%2520gate%2520park-17.jpg",
     "Rating": 4.8,
-    "Number Ratings": 5,
+    "Number Ratings": "5 ratings",
     "Reviews": [
       {
         "Rating": 5,
@@ -17,7 +17,7 @@ var places = [
       {
         "Rating": 5,
         "Review": "A public park extending for a few miles to the Pacific Ocean, with a massive art museum, science museum, arboretum, gorgeous giant trees with two highways going through the length and dozens of trails for walking, cycling.skating and rollerblading. There's a spacious Japanese garden and tea house and much more. A gorgeous metropolitan park, a jewel of San Francisco."
-      }
+      },
       {
         "Rating": 5,
         "Review": "Such a great place to walk in the rain, because of all the trees and foliage. The rain was just a mist yet the gardens around the park are somewhat memorial. Great place to plan an outdoor event it seems. First time here. So big"
@@ -33,7 +33,7 @@ var places = [
     "Name": "Fisherman's Wharf",
     "Main Image": "http://fishermanswharf.org/wp-content/uploads/2018/05/shutterstock_730404997.jpg",
     "Rating": 4.33,
-    "Number Ratings": 6,
+    "Number Ratings": "6 ratings",
     "Reviews": [
       {
         "Rating": 5,
@@ -65,12 +65,24 @@ var places = [
 
 function display_place(db_obj) {
   var name = db_obj["Name"]
+  var img_tag = '<img id="place-img" src="' + db_obj["Main Image"] + '">'
   var rating = parseFloat(db_obj["Rating"])
-  var img_link = db_obj["Main Image"]
-  var img_tag = '<img id="place-img" src="' + img_link + '">'
+  var num_ratings = db_obj["Number Ratings"]
+  var review_obj = db_obj["Reviews"]
 
   $("#name-div").append(name)
   $("#main-img-div").append(img_tag)
+  $("#rating-div").append(rating)
+  $("#num-rating-div").append(num_ratings)
+
+  for (var i = 0; i < db_obj["Reviews"].length; i++) {
+    var review = db_obj["Reviews"][i]["Review"]
+    var row = $("<div>", {class: "review-row"})
+    var review_text = $("<span>", {class: "review-text"})
+    review_text.html(review)
+    row.append(review_text)
+    $("#reviews-container").append(row)
+  }
 }
 
 $(document).ready(function () {

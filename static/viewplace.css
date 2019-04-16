@@ -6,3 +6,7 @@ container {
 #place-img {
   width: 100%;
 }
+
+.review-row {
+  padding-top: 25px;
+}
