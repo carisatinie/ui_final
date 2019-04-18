@@ -63,7 +63,8 @@ function onEachFeature(feature, layer) {
     console.log("feature: ", feature);
     var id = parseInt(feature.properties.id)
     var place_link = "http://127.0.0.1:5000/item/" + id
-    var popup_content = feature.properties.location_name + '<br> <a href="' + place_link + '">' + "See More" + '</a>'
+    var seemore_link = '<br> <a href="' + place_link + '">' + "See More" + '</a>'
+    var popup_content = feature.properties.location_name + seemore_link
     layer.bindPopup(popup_content);
 }
 

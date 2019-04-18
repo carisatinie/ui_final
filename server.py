@@ -1,3 +1,4 @@
+import sys
 from flask import Flask
 from flask import render_template
 from flask import Response, request, jsonify
@@ -25,6 +26,15 @@ def add_item(item_id=None):
 def itinerary():
 	global itin_list
 	return render_template('itinerary.html', itinerary=itin_list)
+
+@app.route('/delete_item', methods=['GET', 'POST'])
+def delete_item():
+	json_data = request.get_json()
+	idx = json_data["idx"]
+	print(idx, file=sys.stderr)
+	del itin_list[idx]
+
+	return jsonify(itinerary = itin_list)
 
 if __name__ == '__main__':
 	app.run(debug = True)
