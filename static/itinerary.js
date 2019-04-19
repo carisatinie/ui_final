@@ -10,7 +10,8 @@ function delete_item(i) {
         success: function(result){
             var all_data = result["itinerary"]
             data = all_data
-            loadItineraries(itinerary)
+            console.log("DATA: " + data)
+            loadItineraries(data)
         },
         error: function(request, status, error){
             console.log("Error");
@@ -22,7 +23,9 @@ function delete_item(i) {
 }
 
 function loadItineraries(itin) {
-  $(".itinerary-container").empty()
+  console.log("itin: " + itin)
+  console.log("itin: " + itin.length)
+  $("#sortable").empty()
 
   for (var i = 0; i < itin.length; i++) {
     var db_obj = itin[i]
@@ -30,6 +33,8 @@ function loadItineraries(itin) {
     var name = db_obj["Name"]
     var rating = db_obj["Rating"]
     var num_ratings = db_obj["Number Ratings"]
+
+    var li_el = $("<li>", {class: "ui-state-default", id: name})
 
     var row = $("<div>", {class: "row", id: "id-"+(i+1)})
 
@@ -62,18 +67,28 @@ function loadItineraries(itin) {
     var del_btn = $("<button>", {class: "btn", text: "X"})
     $(del_btn).on("click", {'idx': i}, function(e) {
       console.log("i: " + e.data.idx)
-      // itin.splice(e.data.idx, 1)
       delete_item(e.data.idx)
-      loadItineraries()
     })
 
     edit_col.append(del_btn)
     row.append(edit_col)
 
-    $(".itinerary-container").append(row)
+    $(li_el).append(row)
+    $("#sortable").append(li_el)
   }
 }
 
+function save_shuffle() {
+  $( "#sortable" ).sortable({
+    stop: function() {
+      var order = $("#sortable").sortable("toArray");
+      console.log("order: " + order)
+    }
+  })
+  $( "#sortable" ).disableSelection()
+}
+
 $(document).ready(function() {
-  loadItineraries()
+  save_shuffle()
+  loadItineraries(itinerary)
 })

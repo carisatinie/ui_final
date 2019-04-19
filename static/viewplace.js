@@ -192,6 +192,7 @@ function display_place(db_obj) {
   }
 }
 
+// TODO: PREVENT DUPLICATES
 var save_item = function(location){
 	var data_to_save = location
 
