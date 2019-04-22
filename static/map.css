@@ -1,4 +1,14 @@
-#mapid { 
-	height: 80%; 
+#mapid {
+	height: 80%;
 	width: 70%;
+	text-align: center;
+}
+
+.link {
+	font-family: Helvetica, sans-serif;
+	font-size: 2em;
+}
+
+#title {
+	font-size: 2em;
 }
