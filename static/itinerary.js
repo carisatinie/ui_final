@@ -1,3 +1,5 @@
+var order_global
+
 function delete_item(i) {
 	var data_to_save = {"idx": i}
 
@@ -65,7 +67,7 @@ function loadItineraries(itin) {
     row.append(content_col)
 
     var del_btn = $("<button>", {class: "btn", text: "X"})
-    $(del_btn).on("click", {'idx': i}, function(e) {
+    $(del_btn).on("click", {'idx': db_obj["Id"]}, function(e) {
       console.log("i: " + e.data.idx)
       delete_item(e.data.idx)
     })
@@ -79,16 +81,51 @@ function loadItineraries(itin) {
 }
 
 function save_shuffle() {
+  // var order_1 = []
   $( "#sortable" ).sortable({
-    stop: function() {
+    update: function() {
       var order = $("#sortable").sortable("toArray");
+      var order_global = order
       console.log("order: " + order)
+      console.log("global inside update: " + order_global)
+
+      // console.log(order_global.length)
+
+      var data_to_save = {"order": order_global}
+      $.ajax({
+            type: "POST",
+            url: "shuffle_itinerary",
+            dataType : "json",
+            contentType: "application/json; charset=utf-8",
+            data : JSON.stringify(data_to_save),
+            success: function(result){
+                console.log("SUCCESS!")
+                console.log("HI??????")
+                var all_data = result["itinerary"]
+                data = all_data
+                console.log("DATA 1: " + JSON.stringify(data[0]))
+                console.log("DATA 2: " + JSON.stringify(data[1]))
+                console.log("DATA 3: " + JSON.stringify(data[2]))
+                // loadItineraries(data)
+            },
+            error: function(request, status, error){
+                console.log("Error");
+                console.log(request)
+                console.log(status)
+                console.log(error)
+            }
+        });
     }
   })
   $( "#sortable" ).disableSelection()
+
+
+
 }
 
 $(document).ready(function() {
   save_shuffle()
+  console.log("HI")
+  console.log("order out: " + order_global)
   loadItineraries(itinerary)
 })

@@ -6,6 +6,7 @@ import json
 app = Flask(__name__)
 
 itin_list = []
+str = "yo"
 
 @app.route('/')
 def map():
@@ -29,10 +30,42 @@ def itinerary():
 
 @app.route('/delete_item', methods=['GET', 'POST'])
 def delete_item():
+	global itin_list
 	json_data = request.get_json()
 	idx = json_data["idx"]
 	print(idx, file=sys.stderr)
-	del itin_list[idx]
+	# del itin_list[idx]
+
+	print("len: ", len(itin_list), file=sys.stderr)
+
+
+
+	for place_idx in range(len(itin_list)):
+		print("itin_list idx: ", itin_list[place_idx]["Id"], file=sys.stderr)
+		if itin_list[place_idx]["Id"] == idx:
+			print("ENTERED", file=sys.stderr)
+			del itin_list[place_idx]
+			break
+
+	return jsonify(itinerary = itin_list)
+
+@app.route('/shuffle_itinerary', methods=['GET', 'POST'])
+def shuffle_itinerary():
+	global itin_list
+
+	reshuffled_itin = []
+
+	json_data = request.get_json()
+	order = json_data["order"]
+
+	reshuffled_itin = []
+	# Reorder itin_list
+	for i in range(len(order)):
+		for j in range(len(itin_list)):
+			if (order[i] == itin_list[j]["Name"]):
+				reshuffled_itin.append(itin_list[j])
+
+	itin_list = reshuffled_itin[:]
 
 	return jsonify(itinerary = itin_list)
 
