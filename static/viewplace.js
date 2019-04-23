@@ -2,7 +2,7 @@ var places = [
   {
     "Id": 1,
     "Name": "Golden Gate Park",
-    "Main Image": "https://media.cntraveler.com/photos/543d39fd00ac583c0af232fb/4:5/w_767,c_limit/golden%2520gate%2520park-17.jpg",
+    "Main Image": "https://25va3qc1hw-flywheel.netdna-ssl.com/wp-content/uploads/2011/03/Conservatory-Of-Flowers-San-Francisco-1280x640.jpg",
     "Rating": 4.8,
     "Number Ratings": "5 ratings",
     "Reviews": [

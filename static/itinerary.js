@@ -66,7 +66,7 @@ function loadItineraries(itin) {
 
     row.append(content_col)
 
-    var del_btn = $("<button>", {class: "btn", text: "X"})
+    var del_btn = $("<button>", {class: "btn", id: "del-btn", text: "X"})
     $(del_btn).on("click", {'idx': db_obj["Id"]}, function(e) {
       console.log("i: " + e.data.idx)
       delete_item(e.data.idx)
