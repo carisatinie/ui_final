@@ -19,3 +19,16 @@ container {
 #title {
 	font-size: 2em;
 }
+
+#name-div {
+  font-size: 1.5em;
+}
+
+#add_btn {
+  font-size: 1.5em;
+  background-color: #d7edd3;
+}
+
+#review-title {
+  font-size: 1.5em;
+}

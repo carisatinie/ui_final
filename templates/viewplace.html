@@ -38,16 +38,20 @@
 
 		<div class="container">
 			<div class="row">
-				<div class="col-md-2" id="main-img-div">
+				<div class="col-md-3" id="main-img-div">
 					<!-- Main image -->
 				</div>
 
-				<div class="col-md-10">
+				<div class="col-md-9">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-12" id="name-div">
+							<div class="col-md-4" id="name-div">
 								<!-- Name of place -->
 							</div>
+							<div class="col-md-3" id="add-div">
+								<button id="add_btn">Add to Itinerary</button>
+							</div>
+							<div id="status"></div>
 						</div>
 
 						<div class="row">
@@ -63,16 +67,14 @@
 		</div>
 
 		<div class="row">
-			<div class="col-md-2">
-				<button id="add_btn">Add to Itinerary</button>
-				<br>
+			<div class="col-md-3">
 				<a href="http://127.0.0.1:5000/">Go back to map!</a>
-				<div id="status"></div>
+				<!-- <div id="status"></div> -->
 			</div>
 
-			<div class="col-md-10">
+			<div class="col-md-9">
 				<div class="container">
-					<div class="row">
+					<div class="row" id="review-title">
 						Reviews:
 					</div>
 					<div class="row">

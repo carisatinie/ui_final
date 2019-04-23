@@ -220,8 +220,7 @@ var add_item_status = function(status_bool){
 		$("#status").text("Unsuccessful – please check again!")
 	}
 	else {
-		$("#status").text("Success! View your itinerary: ")
-    $("#status").append('<a href="http://127.0.0.1:5000/itinerary">Itinerary Link</a>')
+    $("#status").append('<a href="http://127.0.0.1:5000/itinerary">Updated Itinerary!</a>')
 	}
 }
 
