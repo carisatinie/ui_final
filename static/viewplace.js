@@ -217,7 +217,7 @@ var save_item = function(location){
 
 var add_item_status = function(status_bool){
 	if (!status_bool) {
-		$("#status").text("Unsuccessful – please check again!")
+		$("#status").text("Unsuccessful – please check for duplicates!")
 	}
 	else {
     $("#status").append('<a href="http://127.0.0.1:5000/itinerary">Updated Itinerary!</a>')

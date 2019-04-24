@@ -6,7 +6,6 @@ import json
 app = Flask(__name__)
 
 itin_list = []
-str = "yo"
 
 @app.route('/')
 def map():
@@ -20,6 +19,10 @@ def item(item_id=None):
 def add_item(item_id=None):
 	global itin_list
 	json_data = request.get_json()
+	for place in itin_list:
+		print(place["Name"], " ", json_data["Name"])
+		if place["Name"] == json_data["Name"]:
+			abort(400)
 	itin_list.append(json_data)
 	return jsonify({'itinerary': itin_list})
 
