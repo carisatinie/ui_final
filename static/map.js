@@ -55,6 +55,83 @@ var geojsonFeature = {
         "type": "Point",
         "coordinates": [-122.4836, 37.7936]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location_name": "Chinatown",
+        "id": 6
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.4078, 37.7941]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location_name": "Legion of Honor",
+        "id": 7
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.5008, 37.7845]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location_name": "Coit Tower",
+        "id": 8
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.4058, 37.8024]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location_name": "PIER 39",
+        "id": 9
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.4098, 37.8087]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location_name": "Union Square",
+        "id": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.4075, 37.7880]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location_name": "San Francisco City Hall",
+        "id": 11
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.4193, 37.7793]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location_name": "California Academy of Sciences",
+        "id": 12
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.4661, 37.7699]
+      }
     }
   ]
 }

@@ -167,6 +167,197 @@ var places = [
         "Review": "This big beach is outside the Bay and therefore exposed to lots of fog and ocean-caused weather. Still it's a huge beautiful beach, great for a long walk, but bundle up for cold weather!"
       }
     ]
+  },
+  {
+    "Id": 6,
+    "Name": "Chinatown",
+    "Main Image": "https://media.timeout.com/images/102875459/630/472/image.jpg",
+    "Rating": 4.57,
+    "Number Ratings": "7 ratings",
+    "Reviews": [
+      {
+        "Rating": 5,
+        "Review": "Love coming to Chinatown. The one here in San Francisco is one of the largest and oldest in the United States. Founded in 1848, destroyed in the 1906 fire, and then rebuilt. It is filled with shops with items you might not find elsewhere. At a corner market I even found Durian Fruit....not an item you'll ever find at Safeway. We made sure we visited a couple foot massage spots....we were spoiled when we lived in SE Asia and there is nothing quite relaxing as a nice foot massage. Best to just wander about and discover."
+      },
+      {
+        "Rating": 5,
+        "Review": "There are two different areas of Chinatown. One is on Grant and it is definitely a tourist area. Good food and fun shops. But if you want the real Chinatown experience then go to the northern end of Chinatown-Stockton/Pacific/Broadway area. That is where the really interesting stuff is. We saw the neatest stores, tried some super interesting foods (most of which we have no idea what it was because nothing is written in English and the employees don't speak English well). That area was much more interesting and fun to visit."
+      },
+      {
+        "Rating": 4,
+        "Review": "I was lucky and stumbled upon a fortune cookie factory in an alley, some old bank buildings in traditional style, and a park in which locals were doing tai chi. Strong smells and crowds in busy locations."
+      },
+      {
+        "Rating": 4,
+        "Review": "Is it a tourist trap on Grant Ave? Yes, do I mind no not really as the food and prices for their tourist items were so delcious and well marked it was well worth the trip! My favorite was just turning into little side streets and finding different murals along the walls, strolling the streets with some potstickers or ice cream rolls in your hand was quite a fun afternoon. (For sure a daytime experience as at night the atmosphere changes drastically)"
+      },
+      {
+        "Rating": 5,
+        "Review": "We managed to take a tour of the place on a whim and were blown away! The place is huge, with hundreds of shops to buy souvenirs, plus markets selling foodstuffs (and other things!!) that I hadn't even heard of before. Managed to get samples of many eastern dishes and now plan to make them at home myself, what a great experience."
+      },
+      {
+        "Rating": 5,
+        "Review": "I've visited many Chinatowns in many cities, but this is the original one and you will be pleased with the shopping, eating, people-watching and atmosphere. We walked all over, popping in and out of shops. We walked down little alleys and got a taste of life there. There was a fair amount of art/murals that I fell in love with too!"
+      },
+      {
+        "Rating": 4,
+        "Review": "Chinatown in SF is popular the most famous one in all of the US. I walked through it multiple times on my trip to SF and I felt like a minority while I was there. All the signs are in English and Chinese (a few may have been just in Chinese). They had fruit stands, dried fish and lots of other fresh goods. It reminded me a lot of my visits to China but just a little something was missing. Fun place to wander around."
+      }
+    ]
+  },
+  {
+    "Id": 7,
+    "Name": "Legion of Honor",
+    "Main Image": "https://legionofhonor.famsf.org/sites/default/files/styles/collections640x480/public/nav-highlights/lh_visit_top_right.jpg?itok=HLwki_8j",
+    "Rating": 4.83,
+    "Number Ratings": "6 ratings",
+    "Reviews": [
+      {
+        "Rating": 5,
+        "Review": "The views alone from the exterior of this museum are worth the visit! Then inside- treasures of art from all centuries & world-wide countries, all in an atmosphere reminiscent of a museum in Paris! Not to be missed!"
+      },
+      {
+        "Rating": 5,
+        "Review": "We came by for the Rubens exhibit and got right in. I always like to stop by the Rodin sculptures at the entry plaza (The Thinker) and in the gallery. This fine museum looks and acts like a world class museum. Get the membership-it pays for itself with a couple of visits"
+      },
+      {
+        "Rating": 4,
+        "Review": "This museum has a good blend of classical and contemporary art compared to the others in San Francisco. There are also special exhibits featuring artists during some months."
+      },
+      {
+        "Rating": 5,
+        "Review": "We arrived at this wonderful museum less than half and hour before closing and they let up in for free. Usually $15. What a great display of art and sculptures and such. We were amazed. This building is very unique and quite the structure. The outside grounds are fun to walk and the view of the Golden Gate Bridge is wonderful. Must see if you are in the area."
+      },
+      {
+        "Rating": 5,
+        "Review": "If you come here for a special exhibit, parking will be a challenge but it'll be worth it. If you go in the afternoon, stay for the organ concert! The pipe organ is four manuals and it lasts between 30-45 minutes. If you've been walking around the museum for any length of time, sitting for the concert will be a nice rest. It's on a hill with beautiful views of the GG Bridge, there's also a piece of artwork outside to commemorate the holocaust, that is a must see, if anything to be sure we don't forget. As it's in San Francisco, wear layers!"
+      },
+      {
+        "Rating": 5,
+        "Review": "It’s worth the effort to travel to this gallery. A bus (fares payable on board) runs from the San Francisco CBD to a stop within easy walking distance of the entrance to the gallery. The building and the location itself, set high over the bay with views to the Golden Gate bridge, are worth the trip on their own. The collection is a delight, ranging from Egyptian artefacts through to the works of impressionist artists. The café is excellent."
+      }
+    ]
+  },
+  {
+    "Id": 8,
+    "Name": "Coit Tower",
+    "Main Image": "https://www.tripsavvy.com/thmb/7mvBRfo0sDL3LZCB0O2qCbS1O8U=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/20100425_012-1000x1500-56a387c45f9b58b7d0d2744a.jpg",
+    "Rating": 4.67,
+    "Number Ratings": "3 ratings",
+    "Reviews": [
+      {
+        "Rating": 5,
+        "Reviews": "We went on a Saturday afternoon and the wait was about 20 minutes to go up the tower. $9 entrance for adults. The view was definitely worth it - got to see San Francisco from all angles. We stayed there for about 30 min but you can stay as long as you want in the tower. There's parking at the tower but I would recommend walking to the tower if possible because the view on the walk is wonderful"
+      },
+      {
+        "Rating": 5,
+        "Review": "There is very limited parking, so I would plan ahead.  You can walk to it from Little Italy or the hillside facing the Piers, but it is a hefty hike.  Even though a bit of a hike to take on, it is very enjoyable and worth it for the experience.  For those who may have health issues, I would say to not even attempt it. Avoid the weekends, because it is busier then.  Not sure what times of day is best, but we went after lunch and it was a bit busy, but manageable.  You might have to wait a little for the elevator ride due to the age and capacity of the lift, but it moves right along."
+      },
+      {
+        "Rating": 4,
+        "Review": "Enjoyed the views from the top of Coit Tower in San Francisco.  A little pricey at $9 to go the top of this old small scale tower.  Great pictures of entire city, however so not too bad"
+      }
+    ]
+  },
+  {
+    "Id": 9,
+    "Name": "PIER 39",
+    "Main Image": "https://media-cdn.tripadvisor.com/media/photo-s/06/4a/17/02/pier-39.jpg",
+    "Rating": 4.5,
+    "Number Ratings": "4 ratings",
+    "Reviews": [
+      {
+        "Rating": 4,
+        "Review": "A must see place...at least once. Having grown up in SF but having not been back in a while I was surprised at the changes. I guess I miss it when it was a bit more quaint. However, the stores were fun and of course, you can't miss the amazing sea lions. It was a nice stroll. We stopped in one of the restaurants for really yummy garlic bread on sourdough and good cocktails."
+      },
+      {
+        "Rating": 5,
+        "Review": "Best hangout places in San Francisco. Visited multiple times with friends and family. Everyone loves it. Great souvenir shops all along the pier. "
+      },
+      {
+        "Rating": 4,
+        "Review": "Great place to spend few hours while in San Francisco. Loads to do and visit, one of the biggest attraction is the sea lions which was fun and different experience. Plenty of dining options and shops with some interesting things at sale. This pier have fantastic views to Golden Gate Bridge and bay bridge. There is always some live music being played which is fun and entertaining."
+      },
+      {
+        "Rating": 5,
+        "Review": "A must visit place in Fisherman’s Wharf. The view is breathtaking. A very good time spent here. There are lots of places nearby for shopping, food and entertainment. If you want to have a good seafood then this place is perfect for you. Will definitely visit this place again. Overall a very good and memorable experience."
+      }
+    ]
+  },
+  {
+    "Id": 10,
+    "Name": "Union Square",
+    "Main Image": "https://www.tripsavvy.com/thmb/fqIAjZaVUoY6GQ8sA3WBgVTksTg=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-109287627-5b66fb4f46e0fb0050fabc66.jpg",
+    "Rating": 3.8,
+    "Number Ratings": "5 ratings",
+    "Reviews": [
+      {
+        "Rating": 3,
+        "Review": "Nothing special, an average square. High end shops all around it. There were quite a few homeless hanging out in the square."
+      },
+      {
+        "Rating": 3,
+        "Review": "Used to be my favourite part of San Francisco, I'd stay here and wander around just soaking up the heart of the city. Today, it feels more like a concrete jungle; it's not that big and has little emotional appeal."
+      },
+      {
+        "Rating": 5,
+        "Review": "Union Square was a shopping heaven with lots of brands, shops, restaurants, and not-to-be-missed: the famous cable car station at the corner of Market St. and Hyde St."
+      },
+      {
+        "Rating": 4,
+        "Review": "The Union Square area is where all the high-end shops appear to be in SF (they had a Burberry and a Harry Winston within a couple blocks of it other. There is an actual square there which the shops are all centered around. In the middle of the Square is a monument dedicated to Admiral Dewey and his victory at the Battle of Manila Bay. So go to shop or go to enjoy the lovely square."
+      },
+      {
+        "Rating": 4,
+        "Review": "This is a great place to spend an afternoon with kids ice skating. There is a cafe with cute bistro tables to get sandwiches, pastries and drinks right at Union Square! The gigantic holiday tree is a big hit with the kids."
+      }
+    ]
+  },
+  {
+    "Id": 11,
+    "Name": "San Francisco City Hall",
+    "Main Image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/SFCityHall.png/325px-SFCityHall.png",
+    "Rating": 4.67,
+    "Number Ratings": "3 ratings",
+    "Reviews": [
+      {
+        "Rating": 5,
+        "Review": "Gorgeous architecture. Easy to enter through standard security. Rotunda is impressive and worthwhile!"
+      },
+      {
+        "Rating": 4,
+        "Review": "Beautiful building and hard to imagine this is just a city hall building. Warning to any tourists, this was not the safest area. There are 2 modern playgrounds in front of the building. This is technically part of the tenderloin, though it feels safe initially, use caution when exploring particularly with children."
+      },
+      {
+        "Rating": 5,
+        "Review": "Join the 1 hour tour that runs a few times during the day - it’s simply amazing! We were lucky to have Rich and only a small group so we ended up spending 2 hours exploring the building and reliving Rich’s vivid recounts of his 40 year experience of working in this magnificent palace. Nothing really comes close to rivalling this building in the US - simple astonishing"
+      }
+    ]
+  },
+  {
+    "Id": 12,
+    "Name": "California Academy of Sciences",
+    "Main Image": "https://www.trustedtours.com/city/sanfrancisco/htainet/sfcb/photos/05_The%20California%20Academy%20of%20Sciences%20Living%20Roof.jpg",
+    "Rating": 4.5,
+    "Number Ratings": "4 ratings",
+    "Reviews": [
+      {
+        "Rating": 4,
+        "Review": "With the price of admission I was expecting more (thankfully we had citypasses so it was cheaper, $40 is a bit steep). That being said it was a fun place. When you go, get a ticket to one of the Planetarium shows (included with admission) because they fill up fast and that is the only thing to do in the planetarium area. Then head to the Rainforest. There will be a line but it moves quickly. The aquarium area was great-better than the aquarium at Pier 39. The Natural History areas were small and not that interesting. There is an area inside that you can eat a picnic lunch as well as a cafeteria with several options. Be prepared for lines at all the food areas. We spent 4.5 hours here and felt it was a good amount of time."
+      },
+      {
+        "Rating": 4,
+        "Review": "It was interesting to walk the curving ramp up and around the rainforest. There were butterflies everywhere. My favorite part, though, was the planetarium. I recommend pre-purchasing tickets to guarantee a seat for a showing while you're there. It only cost an additional $3 and it was fantastic show!"
+      },
+      {
+        "Rating": 5,
+        "Review": "I've wanted to go for years finally went & would go back again. The aquariums were beautiful & well maintained the exhibits were great to observe & the information was always clear."
+      },
+      {
+        "Rating": 5,
+        "Review": "California academy of sciences is one of the world's best science museums. Exhibits range from a multi-story rainforest from ground level to the treetops. An excellent gemstone and geology display. An unparalleled video about the San Francisco Bay region ecology. There's even a fantastic earthquake exhibit."
+      }
+    ]
   }
 ]
 
@@ -192,7 +383,6 @@ function display_place(db_obj) {
   }
 }
 
-// TODO: PREVENT DUPLICATES
 var save_item = function(location){
 	var data_to_save = location
 

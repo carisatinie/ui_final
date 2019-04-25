@@ -89,8 +89,6 @@ function save_shuffle() {
       console.log("order: " + order)
       console.log("global inside update: " + order_global)
 
-      // console.log(order_global.length)
-
       var data_to_save = {"order": order_global}
       $.ajax({
             type: "POST",

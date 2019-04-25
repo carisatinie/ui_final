@@ -36,12 +36,6 @@ def delete_item():
 	global itin_list
 	json_data = request.get_json()
 	idx = json_data["idx"]
-	print(idx, file=sys.stderr)
-	# del itin_list[idx]
-
-	print("len: ", len(itin_list), file=sys.stderr)
-
-
 
 	for place_idx in range(len(itin_list)):
 		print("itin_list idx: ", itin_list[place_idx]["Id"], file=sys.stderr)
