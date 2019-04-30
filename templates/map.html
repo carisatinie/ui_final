@@ -11,6 +11,9 @@
 	   <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 	   <script type="text/javascript" src="{{ url_for('static', filename='map.js') }}"></script>
 
+		 <script>
+       var places = {{places|tojson}}
+     </script>
 	</head>
 
 	<body>
@@ -29,6 +32,7 @@
 		</div>
 
 		<hr/>
+		<div class="instr-txt"> <span class="heavy"> Instructions: </span> Click the markers to find more about different locations or add it to your itinerary!</div>
 
 		<div id="mapid"></div>
 

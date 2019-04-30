@@ -2,6 +2,8 @@
 	height: 80%;
 	width: 70%;
 	text-align: center;
+	/* width: 50%; */
+  margin: 0 auto;
 }
 
 .link {
@@ -11,4 +13,46 @@
 
 #title {
 	font-size: 2em;
+}
+
+.instr-txt {
+	font-size: 1.2em;
+	padding-bottom: 15px;
+	width: 70%;
+  margin: 0 auto;
+}
+
+.heavy {
+	font-weight: bold;
+}
+
+.name_text {
+	font-size: 1.4em;
+}
+
+.more_link {
+	font-size: 1.2em;
+}
+
+.light_green {
+	background-color: #d7edd3;
+}
+
+.dark_green {
+	background-color: #aee0a6;
+}
+
+.add_btn {
+	margin-left: 10px;
+	font-size: 1.2em;
+}
+
+.success_text {
+	font-size: 1.3em;
+	color: green
+}
+
+.err_text {
+	font-size: 1.3em;
+	color: red
 }
