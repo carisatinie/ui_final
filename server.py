@@ -504,8 +504,26 @@ def add_to_itin(item_id=None):
 	return jsonify({'itinerary': itin_list})
 
 @app.route('/add_item')
-def add_item():
+def add_item_page():
 	return render_template('add_item.html', places=places, geojsonFeature = geojsonFeature)
+
+@app.route('/add_item', methods=['GET', 'POST'])
+def add_item():
+	json_data = request.get_json()
+	place = json_data['place']
+	geojson = json_data['geojson']
+
+	place_curr_id = places[ len(places)-1 ]["Id"] + 1
+	place["Id"] = place_curr_id
+
+	places.append(place)
+
+	geo_curr_id = len(geojsonFeature["features"]) + 1
+
+	geojson["properties"]["id"] = geo_curr_id
+	geojsonFeature["features"].append(geojson)
+
+	return jsonify({'places': places, 'geojsonFeature': geojsonFeature})
 
 @app.route('/itinerary', methods=['GET', 'POST'])
 def itinerary():
