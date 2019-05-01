@@ -42,11 +42,10 @@ function add_item(place, geojson) {
         contentType: "application/json; charset=utf-8",
         data : JSON.stringify({'place': place, 'geojson': geojson}),
         success: function(result){
-            // add_item_status(1)
-            console.log("success")
+            console.log("Success")
+            location.href = 'http://127.0.0.1:5000/'
         },
         error: function(request, status, error){
-            // add_item_status(0)
             console.log("Error");
             console.log(request)
             console.log(status)
@@ -70,9 +69,5 @@ $(document).ready(function() {
     geojson_obj = create_geojson(name, longitude, latitude)
 
     add_item(places_obj, geojson_obj)
-
-    console.log("before")
-    location.href = 'http://127.0.0.1:5000/'
-    console.log("after")
   })
 })
