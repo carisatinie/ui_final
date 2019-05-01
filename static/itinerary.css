@@ -29,3 +29,17 @@
 .itinerary-container {
   padding-top: 10px;
 }
+
+#status_text {
+  display: inline-block;
+  font-size: 1.3em;
+}
+
+#status {
+  padding-top: 10px;
+  text-align: center;
+}
+
+#maplink {
+  font-size: 1.3em;
+}

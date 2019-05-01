@@ -25,8 +25,17 @@ function delete_item(i) {
 }
 
 function loadItineraries(itin) {
-  console.log("itin: " + itin)
-  console.log("itin: " + itin.length)
+
+	if (itin.length == 0) {
+
+		var newlines = "<br><br><br><br><br><br>"
+		var text = $("<span>", {id: "status_text", text: "Your itinerary is empty!"})
+		var map_link = "<br> <a id='maplink' href='http://127.0.0.1:5000/'>Add some from the map.</a>"
+		$("#status").append(newlines)
+		$("#status").append(text)
+		$("#status").append(map_link)
+	}
+
   $("#sortable").empty()
 
   for (var i = 0; i < itin.length; i++) {
@@ -81,13 +90,10 @@ function loadItineraries(itin) {
 }
 
 function save_shuffle() {
-  // var order_1 = []
   $( "#sortable" ).sortable({
     update: function() {
       var order = $("#sortable").sortable("toArray");
       var order_global = order
-      console.log("order: " + order)
-      console.log("global inside update: " + order_global)
 
       var data_to_save = {"order": order_global}
       $.ajax({
@@ -97,14 +103,8 @@ function save_shuffle() {
             contentType: "application/json; charset=utf-8",
             data : JSON.stringify(data_to_save),
             success: function(result){
-                console.log("SUCCESS!")
-                console.log("HI??????")
                 var all_data = result["itinerary"]
                 data = all_data
-                console.log("DATA 1: " + JSON.stringify(data[0]))
-                console.log("DATA 2: " + JSON.stringify(data[1]))
-                console.log("DATA 3: " + JSON.stringify(data[2]))
-                // loadItineraries(data)
             },
             error: function(request, status, error){
                 console.log("Error");
@@ -116,14 +116,9 @@ function save_shuffle() {
     }
   })
   $( "#sortable" ).disableSelection()
-
-
-
 }
 
 $(document).ready(function() {
   save_shuffle()
-  console.log("HI")
-  console.log("order out: " + order_global)
   loadItineraries(itinerary)
 })
