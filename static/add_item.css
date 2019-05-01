@@ -1,3 +1,7 @@
+#content {
+  padding-top: 15px;
+}
+
 .bar {
   padding-top: 10px;
 }
@@ -26,4 +30,8 @@
   color: white;
   font-size: 1em;
   margin-top: 5px;
+}
+
+#submit-btn {
+  margin: 0 auto;
 }

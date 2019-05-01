@@ -36,10 +36,57 @@
 
     <div class="instr-txt"> <span class="heavy"> Instructions: </span> Got a place in mind not on the map? Add it here! </div>
 
-    <div class="container">
-			<div class="row">
+    <div class="container" id="content">
+			<form>
+				<div class="row">
+					<div class="col-md-5">
+						<div class="form-group">
+					  	<label>Location Name*</label>
+					    <input type="text" id="name" class="form-control" placeholder="Enter location's name">
+					  </div>
+					</div>
+					<div class="col-md-1"></div>
+					<div class="col-md-5">
+						<div class="form-group">
+					  	<label>Image Link*</label>
+					    <input type="url" id="imglink" class="form-control" placeholder="An image link (jpg or png)">
+					  </div>
+					</div>
+	      </div>
 
-      </div>
+				<div class="row">
+					<div class="col-md-2">
+						<div class="form-group">
+					    <label>Longitude*</label>
+					    <input type="number" step="0.0001" id="longitude" class="form-control" placeholder="-122.0000">
+					  </div>
+					</div>
+					<div class="col-md-2">
+						<div class="form-group">
+					    <label>Latitude*</label>
+					    <input type="number" step="0.0001" id="latitude" class="form-control" placeholder="37.0000">
+					  </div>
+					</div>
+					<div class="col-md-1">
+						<div class="form-group">
+					    <label>Rating*</label>
+					    <input type="number" step="0.1" id="rating" class="form-control" placeholder="5">
+					  </div>
+					</div>
+					<div class="col-md-1"></div>
+					<div class="col-md-5">
+						<div class="form-group">
+					  	<label>Notes (Your Review)</label>
+					    <textarea id="review" class="form-control" rows="3" placeholder="Your notes about this place (optional)"></textarea>
+					  </div>
+					</div>
+					</div>
+				</div>
+
+				<div class="row">
+						<button type="submit" id="submit-btn" class="btn btn-primary btn-lg">Submit</button>
+				</div>
+			</form>
     </div>
 
 	</body>
