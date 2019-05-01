@@ -32,18 +32,6 @@ function create_geojson(name, longitude, latitude) {
   obj["geometry"] = geometry_obj
 
   return obj
-
-  // {
-  //     "type": "Feature",
-  //     "properties": {
-  //       "location_name": "Golden Gate Park",
-  //       "id": 1
-  //     },
-  //     "geometry": {
-  //       "type": "Point",
-  //       "coordinates": [-122.4862, 37.7694]
-  //     }
-  //   },
 }
 
 function add_item(place, geojson) {
@@ -82,5 +70,9 @@ $(document).ready(function() {
     geojson_obj = create_geojson(name, longitude, latitude)
 
     add_item(places_obj, geojson_obj)
+
+    console.log("before")
+    location.href = 'http://127.0.0.1:5000/'
+    console.log("after")
   })
 })

@@ -473,7 +473,6 @@ geojsonFeature = {
   ]
 }
 
-
 @app.route('/')
 def map():
 	global places
