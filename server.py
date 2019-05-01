@@ -346,7 +346,7 @@ places = [
 
 ]
 
-geojsonFeature = [{
+geojsonFeature = {
   "type": "FeatureCollection",
   "features": [
     {
@@ -471,7 +471,8 @@ geojsonFeature = [{
       }
     }
   ]
-}]
+}
+
 
 @app.route('/')
 def map():
@@ -479,12 +480,10 @@ def map():
 	return render_template('map.html', places=places, geojsonFeature = geojsonFeature)
 
 @app.route('/', methods=['GET', 'POST'])
-def direct_add_item():
-	print("direct_add_item", file=sys.stderr)
+def direct_add_to_itin():
 	global itin_list
 	json_data = request.get_json()
 	for place in itin_list:
-		# print(place["Name"], " ", json_data["Name"])
 		if place["Name"] == json_data["Name"]:
 			abort(400)
 	itin_list.append(json_data)
@@ -492,20 +491,21 @@ def direct_add_item():
 
 @app.route('/item/<item_id>')
 def item(item_id=None):
-	print("item", file=sys.stderr)
 	return render_template('viewplace.html', item_id=item_id, places=places)
 
 @app.route('/item/<item_id>', methods=['GET', 'POST'])
-def add_item(item_id=None):
-	print("add_item", file=sys.stderr)
+def add_to_itin(item_id=None):
 	global itin_list
 	json_data = request.get_json()
 	for place in itin_list:
-		# print(place["Name"], " ", json_data["Name"])
 		if place["Name"] == json_data["Name"]:
 			abort(400)
 	itin_list.append(json_data)
 	return jsonify({'itinerary': itin_list})
+
+@app.route('/add_item')
+def add_item():
+	return render_template('add_item.html', places=places, geojsonFeature = geojsonFeature)
 
 @app.route('/itinerary', methods=['GET', 'POST'])
 def itinerary():
@@ -521,7 +521,6 @@ def delete_item():
 	for place_idx in range(len(itin_list)):
 		print("itin_list idx: ", itin_list[place_idx]["Id"], file=sys.stderr)
 		if itin_list[place_idx]["Id"] == idx:
-			print("ENTERED", file=sys.stderr)
 			del itin_list[place_idx]
 			break
 

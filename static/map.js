@@ -91,7 +91,7 @@ $( document ).ready(function() {
 	var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
 	map.addLayer(layer);
 
-	L.geoJSON(geojsonFeature[0], {
+	L.geoJSON(geojsonFeature, {
 		pointToLayer: function(feature, latlng) {
 	        console.log(latlng, feature);
 	        return L.marker(latlng);
