@@ -6,6 +6,10 @@
   margin: 0 auto;
 }
 
+.bar {
+  padding-top: 10px;
+}
+
 .link {
 	font-family: Helvetica, sans-serif;
 	font-size: 2em;
@@ -13,6 +17,12 @@
 
 #title {
 	font-size: 2em;
+}
+
+#itin_link {
+  color: white;
+  font-size: 1em;
+  margin-top: 5px;
 }
 
 .instr-txt {

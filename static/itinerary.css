@@ -1,3 +1,7 @@
+.bar {
+  padding-top: 10px;
+}
+
 .place-img {
   width: 100%;
 }
@@ -13,4 +17,14 @@
 
 #del-btn {
   font-size: 1.5em;
+}
+
+#itin_link {
+  color: white;
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+.itinerary-container {
+  padding-top: 10px;
 }
