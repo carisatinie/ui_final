@@ -53,7 +53,6 @@ function add_item(place, geojson) {
             $("#error-div").text("Error: Did you try adding a duplicate location?")
         }
     });
-
 }
 
 $(document).ready(function() {
@@ -77,6 +76,8 @@ $(document).ready(function() {
 
   $("#submit-btn").click(function (e) {
     e.preventDefault()
+    validated = false
+
     var name = $("#name").val()
     var img_link = $("#imglink").val()
     var coordinates = $("#coordinates").html()
@@ -86,9 +87,18 @@ $(document).ready(function() {
     var rating = parseInt($("#rating").val())
     var review = $("#review").val()
 
-    places_obj = create_place(name, img_link, rating, review)
-    geojson_obj = create_geojson(name, longitude, latitude)
+    if($.trim($('#name').val()) != '' && $.trim($('#imglink').val()) != '' && coordinates != '' && $.trim($('#rating').val()) != '') {
+      validated = true
+    }
 
-    add_item(places_obj, geojson_obj)
+    if (validated) {
+      places_obj = create_place(name, img_link, rating, review)
+      geojson_obj = create_geojson(name, longitude, latitude)
+      add_item(places_obj, geojson_obj)
+    }
+    else {
+      console.log("Error: form not filled out")
+      $("#error-div").text("It seems like you didn't fill out all the required fields!")
+    }
   })
 })
