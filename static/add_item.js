@@ -46,10 +46,11 @@ function add_item(place, geojson) {
             location.href = 'http://127.0.0.1:5000/'
         },
         error: function(request, status, error){
-            console.log("Error");
+            console.log("Error: duplicate location name?");
             console.log(request)
             console.log(status)
             console.log(error)
+            $("#error-div").text("Error: Did you try adding a duplicate location?")
         }
     });
 
@@ -72,13 +73,7 @@ $(document).ready(function() {
 		var lat = coord[0].split('(');
 	  var lng = coord[1].split(')');
     $("#coordinates").text(lat[1] + ", " + lng[0])
-
-    lat_num = parseFloat(lat[1])
-    lng_num = parseFloat(lng[0])
   });
-
-
-
 
   $("#submit-btn").click(function (e) {
     e.preventDefault()
@@ -86,8 +81,8 @@ $(document).ready(function() {
     var img_link = $("#imglink").val()
     var coordinates = $("#coordinates").html()
     div = coordinates.indexOf(",")
-    var latitude = coordinates.slice(0,div)
-    var longitude = coordinates.slice(div+2, coordinates.length)
+    var latitude = parseFloat(coordinates.slice(0,div))
+    var longitude = parseFloat(coordinates.slice(div+2, coordinates.length))
     var rating = parseInt($("#rating").val())
     var review = $("#review").val()
 

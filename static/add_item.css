@@ -1,6 +1,7 @@
 #mapid {
   height: 350px;
   width: 475px;
+  margin-top: 10px;
 }
 
 #content {
@@ -45,4 +46,8 @@
 
 #coordinates {
   color: green;
+}
+
+#error-div {
+  color: red
 }
