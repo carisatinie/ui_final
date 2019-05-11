@@ -43,3 +43,8 @@
 #maplink {
   font-size: 1.3em;
 }
+
+.place_hover:hover {
+  background-color: #dbdbdb;
+  cursor: pointer
+}

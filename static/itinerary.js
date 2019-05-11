@@ -45,7 +45,7 @@ function loadItineraries(itin) {
     var rating = db_obj["Rating"]
     var num_ratings = db_obj["Number Ratings"]
 
-    var li_el = $("<li>", {class: "ui-state-default", id: name})
+    var li_el = $("<li>", {class: "ui-state-default place_hover", id: name})
 
     var row = $("<div>", {class: "row", id: "id-"+(i+1)})
 
