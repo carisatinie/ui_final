@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import sys
 from flask import Flask
 from flask import render_template
@@ -33,7 +34,7 @@ places = [
       },
       {
         "Rating": 4,
-        "Review": "Very different from parks we are used to. We thought this would be a fairly walkable park but were definitely mistaken, it is a lot bigger than we were led to believe and there are a lot of roads throughout which made it quite hard to get fully lost and enjoy the park experience. We had also read there was plenty of places to rent bikes (around and in the park) to ride through on but this wasn’t the case either, we were half way through the park when we found a bike rental and had already decided to leave. Over all it was nice, pretty and clean but not what we were expecting at all. I would call it more of a collection of small parks or gardens with stuff in between, than an actual park."
+        "Review": "Such a great place to walk in the rain, because of all the trees and foliage."
       }
     ]
   },

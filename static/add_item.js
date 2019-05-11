@@ -56,12 +56,38 @@ function add_item(place, geojson) {
 }
 
 $(document).ready(function() {
+  var map = L.map('mapid', {
+    center: [37.7649, -122.431297],
+    zoom: 13
+  });
+
+  var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+  map.addLayer(layer);
+
+  var lat_num = 0;
+  var lng_num = 0;
+
+  map.on('click', function(e){
+    var coord = e.latlng.toString().split(',');
+		var lat = coord[0].split('(');
+	  var lng = coord[1].split(')');
+    $("#coordinates").text(lat[1] + ", " + lng[0])
+
+    lat_num = parseFloat(lat[1])
+    lng_num = parseFloat(lng[0])
+  });
+
+
+
+
   $("#submit-btn").click(function (e) {
     e.preventDefault()
     var name = $("#name").val()
     var img_link = $("#imglink").val()
-    var longitude = parseFloat($("#longitude").val())
-    var latitude = parseFloat($("#latitude").val())
+    var coordinates = $("#coordinates").html()
+    div = coordinates.indexOf(",")
+    var latitude = coordinates.slice(0,div)
+    var longitude = coordinates.slice(div+2, coordinates.length)
     var rating = parseInt($("#rating").val())
     var review = $("#review").val()
 

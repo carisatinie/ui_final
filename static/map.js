@@ -83,10 +83,10 @@ var save_item = function(location, callback){
     });
 }
 $( document ).ready(function() {
-    var map = L.map('mapid', {
-	    center: [37.7649, -122.431297],
-	    zoom: 13
-	});
+  var map = L.map('mapid', {
+    center: [37.7649, -122.431297],
+    zoom: 13
+   });
 
 	var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
 	map.addLayer(layer);
