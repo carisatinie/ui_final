@@ -12,7 +12,7 @@ container {
 }
 
 .review-row {
-  padding-top: 25px;
+  padding-top: 40px;
 }
 
 .link {
@@ -35,11 +35,18 @@ container {
   font-size: 1.5em;
 }
 
-#add_btn {
-  font-size: 1.5em;
-  background-color: #d7edd3;
-}
-
 #review-title {
   font-size: 1.5em;
+}
+
+.rating-text {
+  font-size: 1.1em;
+}
+
+.review-text {
+  color: #515151
+}
+
+.main-info {
+  background-color: #f2f2f2;
 }

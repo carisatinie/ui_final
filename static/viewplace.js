@@ -12,9 +12,15 @@ function display_place(db_obj) {
 
   for (var i = 0; i < db_obj["Reviews"].length; i++) {
     var review = db_obj["Reviews"][i]["Review"]
+    var review_rating = db_obj["Reviews"][i]["Rating"]
+
     var row = $("<div>", {class: "review-row"})
+    var rating_text = $("<span>", {class: "rating-text"})
+    rating_text.html("Rating: " + review_rating + "/5")
     var review_text = $("<span>", {class: "review-text"})
     review_text.html(review)
+    row.append(rating_text)
+    row.append("<br>")
     row.append(review_text)
     $("#reviews-container").append(row)
   }
