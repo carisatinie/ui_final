@@ -46,6 +46,7 @@
 
 #coordinates {
   color: green;
+  font-weight: bold;
 }
 
 #error-div {
