@@ -64,8 +64,11 @@ function loadItineraries(itin) {
     content_col.append("<br>")
 
     var rating_span = $("<span>", {class: "rating-txt"})
+		var rating_total = $("<span>")
     rating_span.html(rating)
+		rating_total.html(" out of 5")
     content_col.append(rating_span)
+		content_col.append(rating_total)
 
     content_col.append("<br>")
 
