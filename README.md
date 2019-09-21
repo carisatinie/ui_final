@@ -1,10 +1,1 @@
-Final project for Chilton's COMS4170 UI Design class!
-
-TODO:
-* Link to map on viewitem page
-* Delete items from itinerary
-* More images for each place
-* Shuffle order of places in itinerary  
-https://jqueryui.com/sortable/
-* categorized markers
-* stars for ratings
+Create an itinerary for popular spots in SF!
